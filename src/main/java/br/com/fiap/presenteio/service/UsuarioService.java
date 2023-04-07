@@ -8,6 +8,7 @@ import br.com.fiap.presenteio.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class UsuarioService {
     @Autowired
     UsuarioMapper usuarioMapper;
 
+    @Transactional
     public Usuario save(UsuarioPostRequestBody usuarioPostRequestBody) {
         return usuarioRepository.save(usuarioMapper.toUsuario(usuarioPostRequestBody));
     }
@@ -35,4 +37,9 @@ public class UsuarioService {
     public List<Usuario> findByNome(String nome) {
         return usuarioRepository.findByNome(nome);
     }
+
+    public void delete(Integer id) throws ExceptionMessage{
+        usuarioRepository.delete(findByIdOrThrowBadRequestException(id));
+    }
+
 }

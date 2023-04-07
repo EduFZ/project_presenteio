@@ -39,4 +39,10 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.findByNome(nome));
     }
 
+    @DeleteMapping(path = "{id}")
+    public ResponseEntity<Void> delete(@PathVariable Integer id) throws ExceptionMessage{
+        usuarioService.delete(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 }
