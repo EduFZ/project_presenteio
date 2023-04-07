@@ -13,7 +13,6 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @Builder
 @Embeddable
-@MappedSuperclass
 public class Endereco {
     private Long cep;
 

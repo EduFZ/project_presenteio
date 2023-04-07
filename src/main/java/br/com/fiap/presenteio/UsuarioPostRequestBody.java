@@ -16,6 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UsuarioPostRequestBody {
+
     private String nome;
 
     private String sobrenome;
