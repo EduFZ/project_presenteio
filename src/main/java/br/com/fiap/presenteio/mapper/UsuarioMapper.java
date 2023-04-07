@@ -1,6 +1,6 @@
 package br.com.fiap.presenteio.mapper;
 
-import br.com.fiap.presenteio.UsuarioPostRequestBody;
+import br.com.fiap.presenteio.request.UsuarioPostRequestBody;
 import br.com.fiap.presenteio.domain.Usuario;
 import org.springframework.stereotype.Component;
 

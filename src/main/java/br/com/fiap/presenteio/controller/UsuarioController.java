@@ -1,8 +1,9 @@
 package br.com.fiap.presenteio.controller;
 
-import br.com.fiap.presenteio.UsuarioPostRequestBody;
+import br.com.fiap.presenteio.request.UsuarioPostRequestBody;
 import br.com.fiap.presenteio.domain.Usuario;
 import br.com.fiap.presenteio.exception.ExceptionMessage;
+import br.com.fiap.presenteio.request.UsuarioPutRequestBody;
 import br.com.fiap.presenteio.service.UsuarioService;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -43,6 +44,11 @@ public class UsuarioController {
     public ResponseEntity<Void> delete(@PathVariable Integer id) throws ExceptionMessage{
         usuarioService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @PutMapping("/replace/{id}")
+    public ResponseEntity<Usuario> replace(@PathVariable Integer id, @RequestBody UsuarioPutRequestBody usuarioPutRequestBody) throws ExceptionMessage{
+        return new ResponseEntity<>(usuarioService.replace(id, usuarioPutRequestBody), HttpStatus.CREATED);
     }
 
 }

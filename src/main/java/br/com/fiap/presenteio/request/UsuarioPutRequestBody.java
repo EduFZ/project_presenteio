@@ -1,4 +1,4 @@
-package br.com.fiap.presenteio;
+package br.com.fiap.presenteio.request;
 
 import br.com.fiap.presenteio.domain.Endereco;
 import br.com.fiap.presenteio.domain.Experiencia;
@@ -15,7 +15,9 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UsuarioPostRequestBody {
+public class UsuarioPutRequestBody {
+
+    private Integer id;
 
     private String nome;
 
