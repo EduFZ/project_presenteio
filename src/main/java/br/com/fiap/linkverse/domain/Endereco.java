@@ -1,4 +1,4 @@
-package br.com.fiap.presenteio.domain;
+package br.com.fiap.linkverse.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Embeddable;
-import javax.persistence.MappedSuperclass;
 
 @Data
 @AllArgsConstructor

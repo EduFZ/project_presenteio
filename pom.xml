@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.fiap</groupId>
-	<artifactId>presenteio</artifactId>
+	<artifactId>linkverse</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>startupone</name>
 	<description>Projeto Startup One da FIAP</description>

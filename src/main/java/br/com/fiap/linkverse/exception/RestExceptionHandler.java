@@ -1,4 +1,4 @@
-package br.com.fiap.presenteio.exception;
+package br.com.fiap.linkverse.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

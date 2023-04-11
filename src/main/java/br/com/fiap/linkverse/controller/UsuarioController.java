@@ -1,10 +1,10 @@
-package br.com.fiap.presenteio.controller;
+package br.com.fiap.linkverse.controller;
 
-import br.com.fiap.presenteio.request.UsuarioPostRequestBody;
-import br.com.fiap.presenteio.domain.Usuario;
-import br.com.fiap.presenteio.exception.ExceptionMessage;
-import br.com.fiap.presenteio.request.UsuarioPutRequestBody;
-import br.com.fiap.presenteio.service.UsuarioService;
+import br.com.fiap.linkverse.request.UsuarioPostRequestBody;
+import br.com.fiap.linkverse.domain.Usuario;
+import br.com.fiap.linkverse.exception.ExceptionMessage;
+import br.com.fiap.linkverse.request.UsuarioPutRequestBody;
+import br.com.fiap.linkverse.service.UsuarioService;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
-package br.com.fiap.presenteio.repository;
+package br.com.fiap.linkverse.repository;
 
-import br.com.fiap.presenteio.domain.Usuario;
+import br.com.fiap.linkverse.domain.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,11 +1,11 @@
-package br.com.fiap.presenteio.service;
+package br.com.fiap.linkverse.service;
 
-import br.com.fiap.presenteio.request.UsuarioPostRequestBody;
-import br.com.fiap.presenteio.domain.Usuario;
-import br.com.fiap.presenteio.exception.ExceptionMessage;
-import br.com.fiap.presenteio.mapper.UsuarioMapper;
-import br.com.fiap.presenteio.repository.UsuarioRepository;
-import br.com.fiap.presenteio.request.UsuarioPutRequestBody;
+import br.com.fiap.linkverse.request.UsuarioPostRequestBody;
+import br.com.fiap.linkverse.domain.Usuario;
+import br.com.fiap.linkverse.exception.ExceptionMessage;
+import br.com.fiap.linkverse.mapper.UsuarioMapper;
+import br.com.fiap.linkverse.repository.UsuarioRepository;
+import br.com.fiap.linkverse.request.UsuarioPutRequestBody;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

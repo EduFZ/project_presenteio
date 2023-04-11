@@ -1,11 +1,15 @@
-package br.com.fiap.presenteio.mapper;
+package br.com.fiap.linkverse.mapper;
 
-import br.com.fiap.presenteio.request.UsuarioPostRequestBody;
-import br.com.fiap.presenteio.domain.Usuario;
+import br.com.fiap.linkverse.request.UsuarioPostRequestBody;
+import br.com.fiap.linkverse.domain.Usuario;
+import br.com.fiap.linkverse.util.DateUtil;
 import org.springframework.stereotype.Component;
 
 @Component()
 public class UsuarioMapper {
+
+    DateUtil dateUtil;
+
     public Usuario toUsuario(UsuarioPostRequestBody usuarioPostRequestBody){
         Usuario usuario = new Usuario();
         usuario.setNome(usuarioPostRequestBody.getNome());

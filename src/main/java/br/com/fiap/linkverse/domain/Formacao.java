@@ -1,5 +1,6 @@
-package br.com.fiap.presenteio.domain;
+package br.com.fiap.linkverse.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,8 +21,10 @@ public class Formacao {
 
     private String formacao;
 
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date dataInicio;
 
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date dataTermino;
 
     private String projetos;

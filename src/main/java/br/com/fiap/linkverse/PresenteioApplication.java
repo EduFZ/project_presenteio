@@ -1,4 +1,4 @@
-package br.com.fiap.presenteio;
+package br.com.fiap.linkverse;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

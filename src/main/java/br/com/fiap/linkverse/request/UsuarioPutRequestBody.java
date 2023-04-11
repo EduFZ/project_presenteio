@@ -1,8 +1,8 @@
-package br.com.fiap.presenteio.request;
+package br.com.fiap.linkverse.request;
 
-import br.com.fiap.presenteio.domain.Endereco;
-import br.com.fiap.presenteio.domain.Experiencia;
-import br.com.fiap.presenteio.domain.Formacao;
+import br.com.fiap.linkverse.domain.Endereco;
+import br.com.fiap.linkverse.domain.Experiencia;
+import br.com.fiap.linkverse.domain.Formacao;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,5 +1,6 @@
-package br.com.fiap.presenteio.domain;
+package br.com.fiap.linkverse.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -32,8 +33,10 @@ public class Experiencia {
     })
     private Endereco enderecoEmpresa;
 
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date dataInicioEmp;
 
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date dataTerminoEmp;
 
     private Boolean trabalhoAtual;

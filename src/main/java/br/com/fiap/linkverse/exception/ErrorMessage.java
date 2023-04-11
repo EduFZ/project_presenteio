@@ -1,4 +1,4 @@
-package br.com.fiap.presenteio.exception;
+package br.com.fiap.linkverse.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
